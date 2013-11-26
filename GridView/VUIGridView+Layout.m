@@ -30,7 +30,7 @@
 }
 
 - (void)_clickCell:(VUIGridCellView*)cell {
-    if (cell.index == self.selectedIndex || cell.index == _selectedIndex)
+    if (self.isSingleSelect && (cell.index == self.selectedIndex || cell.index == _selectedIndex))
         return;
     SEL csass = sel_registerName("cellSwitchAnimationStopped");
     if ([self.delegate respondsToSelector:csass])

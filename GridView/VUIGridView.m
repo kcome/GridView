@@ -92,6 +92,7 @@
 
 - (void)setup {
     
+    _isSingleSelect = NO;
     _showTopShadow = YES;
     
     _numberOfColumn = 1;

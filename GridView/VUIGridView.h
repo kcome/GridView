@@ -153,6 +153,7 @@ typedef enum {
 @property(nonatomic,readonly,assign) NSUInteger numberOfRow;
 
 @property(nonatomic,assign) NSUInteger selectedIndex;
+@property(nonatomic,assign) BOOL isSingleSelect;
 
 @property(nonatomic,readonly,assign) VUIGridViewPullRefreshIndicatorState pullRefreshIndicatorState;
 @property(nonatomic,readonly,assign) VUIGridViewMoreIndicatorState moreIndicatorState;
